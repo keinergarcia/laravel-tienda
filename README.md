@@ -1,7 +1,7 @@
 # Laravel Tienda
 
 <div align="center">
-  <img src="https://laravel.com/img/logomark.max.svg" alt="Laravel Logo" width="150" />
+  <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" width="180" />
 </div>
 
 <p align="center">
