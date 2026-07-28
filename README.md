@@ -2,7 +2,7 @@
 
 [Laravel Logo](https://laravel.com/img/logomark.min.svg)
 
-**Tienda en línea full-stack desarrollada con Laravel 12.**
+**E-commerce desarrollado con Laravel 12 como proyecto académico del SENA.**
 
 [![GitHub branch](https://img.shields.io/github/v/release/keinergarcia/laravel-tienda)](https://github.com/keinergarcia/laravel-tienda/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/framework)
@@ -13,9 +13,7 @@
 
 ## Acerca de este proyecto
 
-Proyecto de comercio electrónico desarrollado como parte del programa de **Tecnólogo en Análisis y Desarrollo de Software** del **SENA** en **agosto de 2024**.
-
-El proyecto fue concebido como un ejercicio práctico integral que abarca: desarrollo backend con Laravel, diseño de bases de datos relacionales, administración de autenticación y autorización, gestión de sesiones de carrito de compras, procesamiento de pedidos y un panel de administración completo.
+Proyecto desarrollado en **agosto de 2024** durante los primeros semestres del programa de **Tecnólogo en Análisis y Desarrollo de Software** en el **SENA**. Representa un proyecto de aprendizaje práctico que aplica fundamentos de desarrollo web con Laravel: enrutamiento, controladores, modelos, vistas Blade, autenticación, sesiones, validación y un panel de administración básico.
 
 ---
 
