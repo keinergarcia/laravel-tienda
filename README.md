@@ -1,8 +1,13 @@
 # Laravel Tienda
 
-[Laravel Logo](https://laravel.com/img/logomark.min.svg)
+<div align="center">
+  <img src="https://laravel.com/img/logomark.max.svg" alt="Laravel Logo" width="150" />
+</div>
 
-**E-commerce desarrollado con Laravel 12 como proyecto académico del SENA.**
+<p align="center">
+  <b>E-commerce desarrollado con Laravel 12</b><br>
+  como proyecto académico del SENA.
+</p>
 
 [![GitHub branch](https://img.shields.io/github/v/release/keinergarcia/laravel-tienda)](https://github.com/keinergarcia/laravel-tienda/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/framework)
