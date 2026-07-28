@@ -1,61 +1,236 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Tienda
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[Laravel Logo](https://laravel.com/img/logomark.min.svg)
 
-## About Laravel
+**Tienda en línea full-stack desarrollada con Laravel 12.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+[![GitHub branch](https://img.shields.io/github/v/release/keinergarcia/laravel-tienda)](https://github.com/keinergarcia/laravel-tienda/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/framework)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Acerca de este proyecto
 
-## Learning Laravel
+Proyecto de comercio electrónico desarrollado como parte del programa de **Tecnólogo en Análisis y Desarrollo de Software** del **SENA** en **agosto de 2024**.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+El proyecto fue concebido como un ejercicio práctico integral que abarca: desarrollo backend con Laravel, diseño de bases de datos relacionales, administración de autenticación y autorización, gestión de sesiones de carrito de compras, procesamiento de pedidos y un panel de administración completo.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Funcionalidades
 
-## Laravel Sponsors
+### 🛒 Tienda Pública
+- Catálogo de productos con búsqueda
+- Filtrado por categorías
+- Productos destacados y populares
+- Carrito de compras (sesión)
+- Proceso de checkout con formulario de datos y resumen de pedido
+- Historial de pedidos y confirmaciones
+- Perfil de usuario con estadísticas de compra
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🔐 Autenticación
+- Registro de usuarios con validación de contraseña mínima de 8 caracteres
+- Inicio de sesión con rate limiting
+- Gestión de sesiones
+- Cierre de sesión seguro
 
-### Premium Partners
+### 🛡️ Panel de Administración
+- Dashboard con estadísticas en tiempo real (productos, categorías, usuarios, pedidos)
+- Control CRUD completo de productos con búsqueda
+- Gestión de categorías con validación de relaciones
+- Administración de usuarios con control de roles (admin/cliente)
+- Protección de rutas admin con middleware personalizado `is_admin`
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## Tecnologías
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+[![PHP](https://img.shields.io/badge/PHP-8.2-blue)](https://php.net)
+[![Laravel](https://img.shields.io/badge/Laravel-12-red)](https://laravel.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.5-orange)](https://fontawesome.com)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://mysql.com)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3.4-green)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-5-yellow)](https://vitejs.dev)
 
-## Code of Conduct
+- **PHP 8.2**
+- **Laravel 12**
+- **Bootstrap 5.3**
+- **MySQL**
+- **Vite** (bundler de assets)
+- **Tailwind CSS** (a través de Laravel Breeze)
+- **Font Awesome 6.5** (íconos)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## Estructura del Proyecto
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+laravel-tienda/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── AdminController.php      # Dashboard del admin
+│   │   │   ├── CartController.php        # Lógica del carrito
+│   │   │   ├── CategoryController.php    # CRUD categorías
+│   │   │   ├── OrderController.php       # Procesamiento de pedidos
+│   │   │   ├── ProductController.php     # Productos (público + admin)
+│   │   │   └── UserController.php        # Auth, registro, perfil, usuarios admin
+│   │   ├── Kernel.php                    # Kernel HTTP
+│   │   └── Middleware/
+│   │       └── IsAdmin.php              # Middleware de acceso admin
+│   └── Models/
+│       ├── Category.php
+│       ├── Order.php
+│       ├── OrderItem.php
+│       ├── Product.php
+│       └── User.php
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+│   └── index.php
+├── resources/
+│   ├── css/
+│   │   ├── app.css
+│   │   └── custom.css                   # Estilos personalizados neon
+│   ├── js/
+│   └── views/
+│       ├── auth/                        # Login / Registro
+│       ├── cart/                        # Vista del carrito
+│       ├── orders/                      # Checkout, historial, confirmación
+│       ├── products/                    # Catalogo público + formularios
+│       ├── admin/                       # Panel de administración
+│       │   ├── dashboard/
+│       │   ├── categories/
+│       │   ├── products/
+│       │   └── users/
+│       └── layouts/
+│           ├── app.blade.php
+│           ├── admin/
+│           │   └── app.blade.php        # Layout con sidebar para admin
+│           ├── header.blade.php
+│           └── footer.blade.php
+├── routes/
+│   └── web.php                          # Todas las rutas de la aplicación
+└── bootstrap/
+    └── app.php
+```
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Instalación
+
+### Requisitos previos
+- PHP 8.2+
+- Composer
+- MySQL 8.0+
+- Node.js y npm (para assets)
+
+### Pasos
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/keinergarcia/laravel-tienda.git
+cd laravel-tienda
+```
+
+2. **Instalar dependencias de PHP**
+```bash
+composer install
+```
+
+3. **Instalar dependencias de Node**
+```bash
+npm install
+```
+
+4. **Configurar variables de entorno**
+```bash
+cp .env.example .env
+```
+Editar el archivo `.env` y configurar los datos de conexión a la base de datos MySQL:
+```env
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_tienda
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+5. **Generar clave de aplicación**
+```bash
+php artisan key:generate
+```
+
+6. **Ejecutar migraciones y seeders**
+```bash
+php artisan migrate --seed
+```
+
+7. **Compilar assets**
+```bash
+npm run build
+```
+
+8. **Iniciar el servidor de desarrollo**
+```bash
+php artisan serve
+```
+
+La aplicación estará disponible en `http://127.0.0.1:8000`.
+
+> **Nota:** Para acceder al panel de administración, inicia sesión con una cuenta cuyo campo `role` sea `admin`.
+
+---
+
+## Rutas principales
+
+| Ruta | Nombre | Descripción |
+|------|--------|-------------|
+| `/` | `home` | Catálogo principal de productos |
+| `/login` | `login` | Iniciar sesión |
+| `/register` | `register` | Crear cuenta |
+| `/perfil` | `profile` | Perfil de usuario |
+| `/pedidos` | `orders.history` | Historial de pedidos |
+| `/checkout` | `checkout.form` | Proceso de pago |
+| `/admin` | `admin.dashboard` | Panel de administración |
+| `/admin/productos` | `admin.products` | Gestión de productos |
+| `/admin/categorias` | `admin.categories` | Gestión de categorías |
+| `/admin/usuarios` | `admin.users.index` | Gestión de usuarios |
+
+---
+
+## Características del diseño
+
+- **Temática oscura neón** con acentos cyan y gradientes de color
+- **Layout responsive** adaptado a escritorio y móvil
+- **Panel de administración** con sidebar fija y navegación intuitiva
+- **Alertas flash** para feedback de acciones (éxito/error)
+- **Validación de formularios** con mensajes de error contextuales
+- **Badge de destacado** en productos y estatus de pedidos en tiempo real
+
+---
+
+## Licencia
+
+Este proyecto está bajo la [Licencia MIT](LICENSE).
+
+---
+
+## Autor
+
+**Keiner García Ortiz**
+- Desarrollo del proyecto completo como parte del programa de **Tecnólogo en Análisis y Desarrollo de Software** del SENA.
+- Desarrollo realizado en **agosto de 2024**.
+
+---
+
+## Agradecimientos
+
+- [Laravel](https://laravel.com) — framework que hizo posible este proyecto.
+- [Bootstrap](https://getbootstrap.com) — sistema de diseño.
+- [Font Awesome](https://fontawesome.com) — íconos.
+- [SENA](https://www.senasofiaplus.edu.co/) — institución de formación.
