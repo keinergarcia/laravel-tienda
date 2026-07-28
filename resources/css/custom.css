@@ -1,0 +1,231 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --dark-color: #1f2937;
+  --light-color: #f8fafc;
+  --neon-green: #00ff84;
+  --neon-cyan: #00ffe7;
+}
+
+/* ---------------------- */
+/* Base y estructura      */
+/* ---------------------- */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1e1e2f);
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------- */
+/* Cards futuristas       */
+/* ---------------------- */
+.card {
+  background-color: #1a1a2e;
+  border: none;
+  border-radius: 1rem;
+  color: #e0e0e0;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+}
+
+/* ---------------------- */
+/* Formularios futuristas */
+/* ---------------------- */
+.form-control,
+.form-select {
+  background-color: #101020;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 132, 0.25);
+}
+
+.input-group-text {
+  background-color: #101020;
+  border: 1px solid #333;
+  color: var(--neon-green);
+}
+
+/* ---------------------- */
+/* Alertas                */
+/* ---------------------- */
+.alert {
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  background-color: #2a2d3c;
+  color: #f0f0f0;
+}
+
+/* ---------------------- */
+/* Enlaces                */
+/* ---------------------- */
+a {
+  color: var(--neon-green);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00e673;
+}
+
+/* ---------------------- */
+/* Botones generales      */
+/* ---------------------- */
+.btn {
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Botón primario con gradiente púrpura */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  color: white;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.btn-gradient-primary:hover {
+  background: linear-gradient(135deg, #3730a3, #5b21b6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.3);
+}
+
+/* Botón verde neón */
+.btn-neon-green {
+  background: linear-gradient(135deg, #00ff84, #00d26a);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 132, 0.4);
+}
+
+.btn-neon-green:hover {
+  background: linear-gradient(135deg, #00e673, #00c465);
+  box-shadow: 0 0 15px rgba(0, 255, 132, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Gradient bg para fondo primario */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+/* Texto neón */
+.text-neon {
+  color: var(--neon-cyan) !important;
+  text-shadow: 0 0 8px rgba(0, 255, 231, 0.5);
+}
+
+/* Texto verde neón */
+.text-neon-green {
+  color: var(--neon-green) !important;
+  text-shadow: 0 0 8px rgba(0, 255, 132, 0.5);
+}
+
+/* ---------------------- */
+/* Utilitarios            */
+/* ---------------------- */
+.text-cyan {
+  color: var(--neon-cyan) !important;
+}
+
+.text-soft-light {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 6px var(--neon-cyan));
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #0f0f0f, #1e1e2f);
+}
+
+.bg-dark-glass {
+  background-color: rgba(30, 30, 50, 0.95) !important;
+}
+
+/* ---------------------- */
+/* Animaciones            */
+/* ---------------------- */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------- */
+/* Navbar & Footer        */
+/* ---------------------- */
+.navbar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(15, 15, 25, 0.9) !important;
+  z-index: 1030;
+}
+
+.navbar .nav-link {
+  color: #f0f0f0 !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--neon-cyan) !important;
+}
+
+.dropdown-menu {
+  background-color: #2a2d3c !important;
+  color: #f0f0f0 !important;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+  z-index: 1050;
+}
+
+footer {
+  background-color: #1e1e2f;
+  color: #aaa;
+  padding: 1rem 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+/* ---------------------- */
+/* Responsive             */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
